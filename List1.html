@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connect 4.2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .rectangle {
+            position: absolute;
+            top: 338px;
+            left: 1110px;
+            width: 400px;
+            padding: 76px; 
+            background-color:  rgba(0, 0, 0, 0.3); 
+        }
+        .button {
+ 	/* Стили кнопки (как в предыдущем примере) */
+    	position: absolute; /* Позиционируем кнопку абсолютно */
+    	top: 600px;        /* Смещение сверху */
+    	left: 390px;       /* Смещение слева */
+    	background-color: rgba(255, 255, 255, 0.5);
+    	color: rgba (0, 0, 0);
+    	padding: 20px 100px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 30px;
+    	margin: 10px;
+    	cursor: pointer;
+    	transition: background-color 0.3s ease;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+	    color: rgba(250, 250, 250, 0.3);
+        }
+        label, input {
+            margin-bottom: 10px;
+	    color: rgba(255, 255, 255);
+        }
+        input {
+        background-color: rgba(0, 0, 0, 0.3);
+        color: rgba(255, 255, 255);
+        padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/list2.png" alt="Фон сайта" width="1900" height="1080">
+    <div class="rectangle">
+        <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <input type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+    <a href="index.html" class="button">Войти</a>
+</body>
+</html>
